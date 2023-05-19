@@ -133,7 +133,7 @@ recipes.addShaped(<item:libVulpes:rfBattery>,
 
 // Motor - 10.5 iron or 31.5 coins per block (for comparison, ~16 iron ore or ~95 bread 
 recipes.addShaped(<item:libVulpes:tile.motor>*2,
- [[<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>,
+ [[<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>],
   [IRON_TORQUE_SHAFT, IRON_TORQUE_SHAFT, IRON_TORQUE_SHAFT],
   [<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>]]);
 
