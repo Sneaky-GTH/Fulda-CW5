@@ -1,5 +1,9 @@
 import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
+import mods.advancedrocketry.AdvancedRocketryManager;
+
+val lathe = AdvancedRocketryManager.findMachine("TileLathe");
+val cuttingMachine = AdvancedRocketryManager.findMachine("TileCuttingMachine");
 
 /*
 All the initial variables from items_and_recipes.zs (not sure if there was a way to import variables from another .zs file)
@@ -49,7 +53,9 @@ val STEAK = <item:minecraft:cooked_beef>;
 val CHICKEN = <item:minecraft:cooked_chicken>;
 val IRON_ORE = <item:minecraft:iron_ore>;
 val IRON_BLOCK = <item:minecraft:iron_block>;
-
+val COPPER_ROD = <item:libVulpes:libVulpesproductrod:4>;
+val COPPER = <item:ImmersiveEngineering:metal>;
+val IRON_FRAME = <item:minefantasy2:MF_Com_iron_frame>;
 
 // from what I understood we'll probably be using admin shops for these but I wanted to add these simply as a way for preliminary balance
 
@@ -88,54 +94,111 @@ recipes.addShaped(IRON*27,
 
 // simple AR machines and stuff
 
-// Rolling Machine - 25 iron or 75 coins. (for comparison, ~38 iron ore or 175 bread)
+// Rolling Machine - 17 iron or 51 coins
 recipes.addShaped(<item:advancedRocketry:tile.rollingMachine>,
- [[IRON_TORQUE_SHAFT, IRON, IRON_TORQUE_SHAFT],
-  [IRON, IRON_BLOCK, IRON],
-  [IRON_TORQUE_SHAFT, IRON, IRON_TORQUE_SHAFT]]);
+ [[IRON_TORQUE_SHAFT, IRON_ROD, IRON_TORQUE_SHAFT],
+  [IRON_ROD, <item:libVulpes:blockStructureBlock>, IRON_ROD],
+  [IRON_TORQUE_SHAFT, IRON_ROD, IRON_TORQUE_SHAFT]]);
 
-// Machine Structure - 3 iron or 9 coins per block (for comparison, ~5 iron ore or 27 bread per block)
-recipes.addShaped(<item:libVulpes:blockStructureBlock>*3,
+// Machine Structure - 1 iron or 3 coins per block
+recipes.addShaped(<item:libVulpes:blockStructureBlock>*9,
  [[null, IRON, null],
   [IRON, IRON_GEAR_SET, IRON],
   [null, IRON, null]]);
 
-// Input Block - 6 iron or 18 coins (for comparison, 9 iron ore or 54 bread)
+// Input Block - 4 iron or 18 coins
+recipes.remove(<item:libVulpes:blockHatch>);
 recipes.addShaped(<item:libVulpes:blockHatch>,
  [[null, <item:minecraft:chest>, null],
   [IRON, <item:libVulpes:blockStructureBlock>, IRON],
   [null, IRON, null]]);
 
-// Fluid Input Block - 9 iron or 27 coins(for comparison, ~14 iron ore or 81 bread)
+// Fluid Input Block - 7 iron or 27 coins
+recipes.remove(<item:libVulpes:blockHatch:2>);
 recipes.addShaped(<item:libVulpes:blockHatch:2>,
  [[null, <item:minecraft:bucket>, null],
   [IRON, <item:libVulpes:blockStructureBlock>, IRON],
   [null, IRON, null]]);
 
-// Output Block - 6 iron or 18 coins (for comparison, 9 iron ore or 54 bread)
+// Output Block - 4 iron or 12 coins
+recipes.remove(<item:libVulpes:blockHatch:1>);
 recipes.addShaped(<item:libVulpes:blockHatch:1>,
  [[null, IRON, null],
   [IRON, <item:libVulpes:blockStructureBlock>, IRON],
   [null, <item:minecraft:chest>, null]]);
 
-// Fluid Output Block - 9 iron or 27 coins(for comparison, ~14 iron ore or 81 bread)
+// Fluid Output Block - 7 iron or 21 coins
+recipes.remove(<item:libVulpes:blockHatch:3>);
 recipes.addShaped(<item:libVulpes:blockHatch:3>,
  [[null, IRON, null],
   [IRON, <item:libVulpes:blockStructureBlock>, IRON],
   [null, <item:minecraft:bucket>, null]]);
 
 // assuming 1 copper = 2 iron
-// RF Input Block - 11 iron or 33 coins (for comparison, ~17 iron ore or 99 bread)
+// RF Input Block - 9 iron or 27 coins
 recipes.addShaped(<item:libVulpes:rfBattery>,
  [[null, <item:ImmersiveEngineering:coil>, null],
   [<item:ImmersiveEngineering:coil>, <item:libVulpes:blockStructureBlock>, <item:ImmersiveEngineering:coil>],
   [null, <item:ImmersiveEngineering:coil>, null]]);
 
-// Motor - 10.5 iron or 31.5 coins per block (for comparison, ~16 iron ore or ~95 bread 
+// Motor - 9 iron or 27 coins per block
 recipes.addShaped(<item:libVulpes:tile.motor>*2,
- [[<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>],
-  [IRON_TORQUE_SHAFT, IRON_TORQUE_SHAFT, IRON_TORQUE_SHAFT],
-  [<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>]]);
+ [[null, <item:ImmersiveEngineering:coil>, null],
+  [IRON, IRON_TORQUE_SHAFT, IRON],
+  [null, <item:ImmersiveEngineering:coil>, null]]);
 
-//Total for a rolling machine: 91.5 iron or 275 coins (for comparison, ~138 iron ore or 823.5 bread (13 stacks)
-//Probably too much?
+//Total for a rolling machine: ~64 iron or 192 coins
+
+
+// Lathe
+// 19 iron or 57 coins
+recipes.addShaped(<item:advancedRocketry:tile.lathe>,
+ [[IRON_TORQUE_SHAFT, IRON, IRON_TORQUE_SHAFT],
+  [IRON, IRON_TORQUE_SHAFT, IRON],
+  [IRON_TORQUE_SHAFT, IRON, IRON_TORQUE_SHAFT]]);
+
+//1 Motor, 1 Power Input, 1 Input, 1 Output, 2 Machine Structures
+//Total: 28 iron or 84 coins
+
+//Iron Rods (requires Lathe)
+lathe.addRecipe([IRON_ROD], [], [IRON], [], 600, 20);
+
+//Cutting Machine
+// 17 iron or 51 coins
+recipes.addShaped(<item:advancedRocketry:cuttingMachine>,
+ [[IRON_ROD, IRON_PLATE, IRON_ROD],
+  [IRON_PLATE, IRON_BLOCK, IRON_PLATE],
+  [IRON_ROD, IRON_PLATE, IRON_ROD]]);
+
+// 5 iron or 15 coins
+recipes.addShaped(<item:advancedRocketry:sawBlade>,
+ [[null, IRON, null],
+  [IRON, IRON_PLATE, IRON],
+  [null, IRON, null]]);
+
+// 10 iron or 30 coins
+recipes.addShaped(<item:advancedRocketry:tile.sawBlade>,
+ [[null, null, null],
+  [IRON_ROD, <item:advancedRocketry:sawBlade>, IRON_ROD],
+  [IRON_PLATE, <item:libVulpes:blockStructureBlock>, IRON_PLATE]]);
+
+// Cutting Machine total: 54.5 iron or ~165 coins
+
+//Copper Rods (requires Cutting Machine)
+cuttingMachine.addRecipe([COPPER_ROD], [], [COPPER], [], 600, 20);
+
+
+
+//Iron Frame (generic expensive early equipment component), worth 24 iron or 72 coins, requires a Rolling Machine
+recipes.addShaped(<item:minefantasy2:MF_Com_iron_frame>,
+ [[IRON_ROD, IRON_BLOCK, IRON_ROD],
+  [IRON_PLATE, null, IRON_PLATE],
+  [IRON_ROD, IRON_BLOCK, IRON_ROD]]);
+
+
+// Iron Mechanical Component (generic cheap early equipment component), worth 6 iron or 18 coins, requires a Cutting Machine
+recipes.remove(IRON_MECH_COMP);
+recipes.addShaped(IRON_MECH_COMP,
+ [[IRON, null, IRON],
+  [null, COPPER_ROD, null],
+  [IRON, null, IRON]]);

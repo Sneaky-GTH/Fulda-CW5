@@ -1,0 +1,32 @@
+USABLE MACHINES:
+
+First Tier:
+Lathe
+Rolling Machine
+Cutting Machine
+
+Second Tier:
+Oil?
+Reinforced Blast Furnace
+Crusher
+Grinder
+Sifter
+-Metal Press
+
+//probably rename these three
+Third Tier:
+Arc Furnace
+Precision Assembler
+-Electrolyser
+-Chemical Reactor
+-Crystallizer
+
+
+
+Usable Materials:
+Iron Ingots (worth 3 coins, requires nothing)
+Iron Rods (worth 3 coins, requires Lathe)
+Iron Plates (worth 3 coins, requires Rolling Machine)
+Copper Rods (worth 6 coins, requires Cutting Machine)
+Iron Frame (worth 72 coins, requires Rolling Machine)
+Iron Mech Component (worth 18 coins, requires Cutting Machine)
