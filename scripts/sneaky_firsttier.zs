@@ -5,6 +5,7 @@ import mods.immersiveengineering.BlastFurnace;
 
 val lathe = AdvancedRocketryManager.findMachine("TileLathe");
 val cuttingMachine = AdvancedRocketryManager.findMachine("TileCuttingMachine");
+val rollingMachine = AdvancedRocketryManager.findMachine("TileRollingMachine");
 
 /*
 All the initial variables from items_and_recipes.zs (not sure if there was a way to import variables from another .zs file)
@@ -62,6 +63,7 @@ val TITANIUM_BLOCK = <item:advancedRocketry:advancedRocketrymetal0>;
 val TITANIUM_ROD = <item:advancedRocketry:advancedRocketryproductrod>;
 val TITANIUM_GEAR = <item:advancedRocketry:advancedRocketryproductgear>;
 val STEEL = <item:ImmersiveEngineering:metal:7>;
+val ALUMINIUM = <item:ImmersiveEngineering:metal:1>;
 
 // from what I understood we'll probably be using admin shops for these but I wanted to add these simply as a way for preliminary balance
 
@@ -160,6 +162,7 @@ recipes.addShaped(<item:libVulpes:tile.motor>*2,
 
 //Total for a rolling machine: ~64 iron or 192 coins
 
+rollingMachine.addRecipe([IRON_PLATE], [], [IRON], [], 600, 20);
 
 // Lathe
 // 19 iron or 57 coins
@@ -215,3 +218,20 @@ recipes.addShaped(IRON_MECH_COMP,
   [null, COPPER_ROD, null],
   [IRON, null, IRON]]);
 
+//Basic circuit
+recipes.addShaped(<item:advancedRocketry:circuitIC>,
+ [[null, COPPER_ROD, null],
+  [<item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>, <item:ImmersiveEngineering:coil>],
+  [COPPER, COPPER, COPPER]]);
+
+
+
+//Aluminium stuff in-case we need really expensive materials
+// 1 Aluminium ~ 16 iron
+
+recipes.remove(ALUMINIUM_PLATE);
+rollingMachine.addRecipe([ALUMINIUM_PLATE], [], [ALUMINIUM*4], [], 600, 20);
+
+//Titanium rods
+recipes.remove(ALUMINIUM_ROD);
+cuttingMachine.addRecipe([ALUMINIUM_ROD], [], [ALUMINIUM*2], [], 600, 20);

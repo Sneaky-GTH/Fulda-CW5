@@ -21,6 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
+    <!-->
 	<Recipe timeRequired="300" power ="1">
 		<input>
 			<itemStack>flansmod:square_steel_bar 1</itemStack>
@@ -86,4 +87,5 @@
             <itemStack>hbm:item.neutron_reflector</itemStack>
         </output>
     </Recipe>
+    <!-->
 </Recipes>

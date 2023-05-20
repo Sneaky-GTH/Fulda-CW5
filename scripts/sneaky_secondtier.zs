@@ -99,6 +99,11 @@ recipes.addShaped(<item:Magneticraft:crusher_control>,
 mods.magneticraft.Crusher.addRecipe(COPPER_ROD * 4, COPPER_HEAT_COIL, null, 0, null, 0);
 mods.magneticraft.Crusher.addRecipe(IRON_ROD * 4, IRON_HEAT_COIL, null, 0, null, 0);
 
+recipes.addShaped(<item:Magneticraft:item.copper_coil>,
+ [[COPPER_HEAT_COIL, COPPER_ROD, COPPER_HEAT_COIL],
+  [COPPER_HEAT_COIL, null, COPPER_HEAT_COIL],
+  [COPPER_HEAT_COIL, COPPER_ROD, COPPER_HEAT_COIL]]);
+
 
 // Grinder Control - 38 iron or 114 coins per block
 recipes.addShaped(<item:Magneticraft:grinder_control>,
@@ -136,6 +141,34 @@ recipes.addShaped(<item:Magneticraft:mb_controls>,
   [<item:Magneticraft:chasis>, <item:ImmersiveEngineering:coil>, <item:Magneticraft:chasis>]]);
 
 
+// Refinery Control
+recipes.addShaped(<item:Magneticraft:refinery_control>,
+ [[IRON_MECH_COMP, TITANIUM_BLOCK, IRON_MECH_COMP],
+  [IRON_MECH_COMP, TITANIUM_BLOCK, IRON_MECH_COMP],
+  [<item:Magneticraft:chasis>, IRON_BLOCK, <item:Magneticraft:chasis>]]);
+
+
+// Polymerizer Control
+recipes.addShaped(<item:Magneticraft:polimerizer_control>,
+ [[IRON_PLATE, TITANIUM_BLOCK, IRON_PLATE],
+  [IRON_MECH_COMP, IRON_HEAT_COIL, IRON_MECH_COMP],
+  [<item:Magneticraft:chasis>, TITANIUM_BLOCK, <item:Magneticraft:chasis>]]);
+
+
+// Heater
+recipes.addShaped(<item:Magneticraft:heater>,
+ [[COPPER_HEAT_COIL, IRON_ROD, COPPER_HEAT_COIL],
+  [COPPER_HEAT_COIL, <item:Magneticraft:chasis>, COPPER_HEAT_COIL],
+  [COPPER_HEAT_COIL, IRON_ROD, COPPER_HEAT_COIL]]);
+
+
+// Fluid Tank
+recipes.addShaped(<item:Magneticraft:mg_tank>,
+ [[COPPER_ROD, <item:minecraft:glass>, COPPER_ROD],
+  [<item:minecraft:glass>, null, <item:minecraft:glass>],
+  [COPPER_ROD, <item:minecraft:glass>, COPPER_ROD]]);
+
+
 // Steel! Worth 4 iron
 mods.immersiveengineering.BlastFurnace.removeRecipe(<item:ImmersiveEngineering:metal:7>);
 mods.immersiveengineering.BlastFurnace.addRecipe(<item:ImmersiveEngineering:metal:7>, <item:libVulpes:libVulpesproductdust:6>, 300);
@@ -151,6 +184,7 @@ recipes.addShaped(<item:ImmersiveEngineering:stoneDecoration:2>,
   [<item:minecraft:brick_block>, <item:minecraft:brick>, <item:minecraft:brick_block>]]);
 
 recipes.remove(<item:ImmersiveEngineering:metal:38>);
+recipes.remove(<item:libVulpes:libVulpesproductrod:6>);
 recipes.remove(STEEL_MECH_COMP);
 
 // 18 iron or 54 coins
