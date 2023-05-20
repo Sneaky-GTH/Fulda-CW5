@@ -161,3 +161,8 @@ recipes.addShaped(STEEL_MECH_COMP,
 
 recipes.remove(STEEL_ROD);
 
+//Chemical Reactor
+recipes.addShaped(<item:advancedRocketry:tile.chemreactor>,
+ [[IRON_PLATE, TITANIUM, IRON_PLATE],
+  [IRON_MECH_COMP, <item:libVulpes:blockStructureBlock>, IRON_MECH_COMP],
+  [IRON_PLATE, TITANIUM, IRON_PLATE]]);

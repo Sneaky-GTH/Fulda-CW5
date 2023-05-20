@@ -106,7 +106,7 @@ val array = [
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "viking.leader.elite"}),
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "custom_3.civilian.male"}),
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "native.bard"}),
-<item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "viking.trader"}),
+//<item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "viking.trader"}),
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "custom_1.leader"}),
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "custom_2.leader"}),
 <item:AncientWarfareNpc:npc_spawner>.withTag({npcSubtype: "", npcType: "custom_3.leader"}),

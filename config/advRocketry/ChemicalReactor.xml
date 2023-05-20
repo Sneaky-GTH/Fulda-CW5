@@ -21,6 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
+    <!-->
 	<Recipe timeRequired="40" power ="20">
 		<input>
 			<itemStack>cobblestone</itemStack>
@@ -333,4 +334,5 @@
 				<itemStack>minechem:minechemMolecule 2 34</itemStack>
 			</output>
 		</Recipe>
+    <!-->
 </Recipes>

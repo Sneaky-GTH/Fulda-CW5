@@ -46,4 +46,3 @@ for i in 0 to 24 {
     mods.magneticraft.Sifter.removeRecipe(itemPebbles.makeStack(i));
 }
 
-
