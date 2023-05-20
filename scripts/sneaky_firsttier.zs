@@ -1,6 +1,7 @@
 import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 import mods.advancedrocketry.AdvancedRocketryManager;
+import mods.immersiveengineering.BlastFurnace;
 
 val lathe = AdvancedRocketryManager.findMachine("TileLathe");
 val cuttingMachine = AdvancedRocketryManager.findMachine("TileCuttingMachine");
@@ -202,3 +203,4 @@ recipes.addShaped(IRON_MECH_COMP,
  [[IRON, null, IRON],
   [null, COPPER_ROD, null],
   [IRON, null, IRON]]);
+
