@@ -57,6 +57,11 @@ val IRON_BLOCK = <item:minecraft:iron_block>;
 val COPPER_ROD = <item:libVulpes:libVulpesproductrod:4>;
 val COPPER = <item:ImmersiveEngineering:metal>;
 val IRON_FRAME = <item:minefantasy2:MF_Com_iron_frame>;
+val TITANIUM = <item:advancedRocketry:advancedRocketryproductingot>;
+val TITANIUM_BLOCK = <item:advancedRocketry:advancedRocketrymetal0>;
+val TITANIUM_ROD = <item:advancedRocketry:advancedRocketryproductrod>;
+val TITANIUM_GEAR = <item:advancedRocketry:advancedRocketryproductgear>;
+val STEEL = <item:ImmersiveEngineering:metal:7>;
 
 // from what I understood we'll probably be using admin shops for these but I wanted to add these simply as a way for preliminary balance
 
@@ -91,6 +96,11 @@ recipes.addShaped(IRON*27,
  [[COINBLOCK, COINBLOCK, COINBLOCK],
   [COINBLOCK, COINBLOCK, COINBLOCK],
   [COINBLOCK, COINBLOCK, COINBLOCK]]);
+
+recipes.addShaped(TITANIUM_GEAR,
+ [[null, TITANIUM, null],
+  [TITANIUM, TITANIUM, TITANIUM],
+  [null, TITANIUM, null]]);
 
 
 // simple AR machines and stuff
@@ -188,7 +198,8 @@ recipes.addShaped(<item:advancedRocketry:tile.sawBlade>,
 //Copper Rods (requires Cutting Machine)
 cuttingMachine.addRecipe([COPPER_ROD], [], [COPPER], [], 600, 20);
 
-
+//Titanium rods
+cuttingMachine.addRecipe([TITANIUM_ROD], [], [TITANIUM], [], 600, 20);
 
 //Iron Frame (generic expensive early equipment component), worth 24 iron or 72 coins, requires a Rolling Machine
 recipes.addShaped(<item:minefantasy2:MF_Com_iron_frame>,

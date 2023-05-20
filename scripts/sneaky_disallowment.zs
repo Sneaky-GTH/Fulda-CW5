@@ -9,9 +9,12 @@ mods.immersiveengineering.MetalPress.removeRecipe(<item:ImmersiveEngineering:met
 mods.immersiveengineering.MetalPress.removeRecipe(<item:ImmersiveEngineering:material:14>);
 mods.immersiveengineering.MetalPress.removeRecipe(<item:libVulpes:libVulpesproductrod:4>);
 mods.immersiveengineering.MetalPress.removeRecipe(<item:ImmersiveEngineering:metal:38>);
+mods.immersiveengineering.MetalPress.removeRecipe(<item:advancedRocketry:advancedRocketryproductrod>);
+mods.immersiveengineering.MetalPress.removeRecipe(<item:advancedRocketry:advancedRocketryproductgear>);
 recipes.remove(<item:ImmersiveEngineering:material:14>);
 recipes.remove(<item:ImmersiveEngineering:metal:30>);
 recipes.remove(<item:libVulpes:libVulpesproductrod:4>);
+furnace.remove(<item:Magneticraft:item.pebbles>);
 
 val array = [
 <item:minecraft:sticky_piston>,

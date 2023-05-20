@@ -847,3 +847,62 @@ config/Waila.cfg
 config/WailaHarvestability.cfg
 config/worldedit/worldedit.properties
 mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+saves/New World/teams_The End.dat
+saves/New World/teams_Space.dat
+saves/New World/teams_Overworld.dat
+saves/New World/teams_Nether.dat
+saves/New World/stats/a22cfbf0-cdaa-40a8-9d9f-4c4309cea957.json
+saves/New World/session.lock
+saves/New World/region/r.0.1.mca
+saves/New World/region/r.0.0.mca
+saves/New World/region/r.-1.0.mca
+saves/New World/playerdata/a22cfbf0-cdaa-40a8-9d9f-4c4309cea957.dat
+saves/New World/NEI/server.cfg
+saves/New World/NEI/players/MC_Sneaky.dat
+saves/New World/NEI/banneditems.cfg
+saves/New World/multipart.dat
+saves/New World/level.dat_old
+saves/New World/level.dat_mcr
+saves/New World/level.dat
+saves/New World/forcedchunks.dat
+saves/New World/DIM1/multipart.dat
+saves/New World/DIM1/forcedchunks.dat
+saves/New World/DIM-1/multipart.dat
+saves/New World/DIM-1/forcedchunks.dat
+saves/New World/data/villages.dat
+saves/New World/data/radiation.dat
+saves/New World/data/Mineshaft.dat
+saves/New World/data/ImmersiveEngineering-SaveData.dat
+saves/New World/data/hbmauxdata.dat
+saves/New World/data/AWTownMap.dat
+saves/New World/data/AWStructureMap.dat
+saves/New World/data/AWResearchData.dat
+saves/New World/data/AWFactionData.dat
+saves/New World/cofh/EnderFrequencies.cfg
+saves/New World/cofh/EnderDestinations.cfg
+saves/New World/advRocketry/temp.dat
+saves/New World/advRocketry/planetDefs.xml
+saves/New World/advRocketry/DIM-2/multipart.dat
+saves/New World/advRocketry/DIM-2/forcedchunks.dat
+saves/NEI/local/New World/NEI.dat
+saves/NEI/local/New World/NEI.cfg
+mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+logs/2023-05-20-1.log.gz
+logs/2023-05-19-1.log.gz
+journeymap/data/sp/New World/DIM0/night/0,0.png
+journeymap/data/sp/New World/DIM0/day/0,0.png
+generated/Sneaky_thirdtier.class
+generated/Sneaky_secondtier.class
+generated/Sneaky_initialrecipes.class
+generated/Sneaky_firsttier.class
+generated/Sneaky_disallowment.class
+config/worldedit/worldedit.properties
+config/tickDynamic.cfg
+config/splash.properties
+config/InvTweaks.cfg
+config/fastcraft.ini
+config/advancedmachinery/resourcepack/output-resourcepack.zip
+asm/ccl_modular/agq.txt
+screenshots/2023-05-20_15.26.19.png
+screenshots/2023-05-20_12.02.12.png
+mods/carpentersblocks/CarpentersBlocksCachedResources.zip

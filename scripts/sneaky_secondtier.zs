@@ -108,6 +108,7 @@ recipes.addShaped(<item:Magneticraft:grinder_control>,
 
 // Iron Dust, used to make steel
 mods.magneticraft.Grinder.addRecipe(IRON * 4, <item:Magneticraft:item.dust>, null, 0, null, 0);
+mods.magneticraft.Grinder.addRecipe(TITANIUM, <item:advancedRocketry:advancedRocketryproductdust>, null, 0, null, 0);
 
 
 // Sifter Control - 26 iron or 78 coins per block
@@ -154,7 +155,9 @@ recipes.remove(STEEL_MECH_COMP);
 
 // 18 iron or 54 coins
 recipes.addShaped(STEEL_MECH_COMP,
- [[STEEL, null STEEL],
+ [[STEEL, null, STEEL],
   [null, COPPER_ROD, null],
   [STEEL, null, STEEL]]);
+
+recipes.remove(STEEL_ROD);
 
