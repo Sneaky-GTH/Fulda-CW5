@@ -111,10 +111,10 @@ mods.magneticraft.Grinder.addRecipe(IRON * 4, <item:Magneticraft:item.dust>, nul
 mods.magneticraft.Grinder.addRecipe(TITANIUM, <item:advancedRocketry:advancedRocketryproductdust>, null, 0, null, 0);
 
 
-// Sifter Control - 26 iron or 78 coins per block
+// Sifter Control - 30 iron or 90 coins per block
 recipes.addShaped(<item:Magneticraft:sifter_control>,
  [[<item:Magneticraft:chasis>, IRON_BLOCK, <item:Magneticraft:chasis>],
-  [<item:ImmersiveEngineering:coil>, TITANIUM_BLOCK, <item:ImmersiveEngineering:coil>],
+  [IRON_HEAT_COIL, TITANIUM_BLOCK, IRON_HEAT_COIL],
   [<item:Magneticraft:chasis>, IRON_BLOCK, <item:Magneticraft:chasis>]]);
 
 // Coal Flux, used to make steel

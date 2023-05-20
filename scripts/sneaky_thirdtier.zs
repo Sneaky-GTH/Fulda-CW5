@@ -86,7 +86,7 @@ recipes.addShaped(<item:ImmersiveEngineering:metalDecoration:7>,
 //Precision Assembler
 recipes.addShaped(<item:advancedRocketry:precisionassemblingmachine>,
  [[TITANIUM_GEAR, STEEL_MECH_COMP, TITANIUM_GEAR],
-  [STEEL_MECH_COMP, <item:libVulpes:blockStructureBlock>, STEEL_MECH_COMP],
+  [<item:hbm:item.ingot_dura_steel>, <item:libVulpes:blockStructureBlock>, <item:hbm:item.ingot_dura_steel>],
   [TITANIUM_BLOCK, TITANIUM_BLOCK, TITANIUM_BLOCK]]);
 
 //HSS Bolt
