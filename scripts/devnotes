@@ -31,6 +31,12 @@ Precision Assembler
 
 
 Usable Materials:
+
+Titanium Ingot
+Titanium Block (9 Titanium)
+Titanium Plate (1 Titanium, requires Rolling Machine) | Tier 1
+Titanium Rod (1 Titanium, requires Cutting Machine) | Tier 1.5
+
 Iron Ingots (worth 1 iron) | Tier 0
 Copper Ingots (worth 2 iron) | Tier 0
 Iron Blocks (worth 9 iron | Tier 0
@@ -44,7 +50,7 @@ Iron Rods (worth 1 iron, requires Cutting Machine) | Tier 1.5
 Copper Rods (worth 2 iron, requires Cutting Machine) | Tier 1.5
 Iron Mech Component (worth 6 iron, requires Cutting Machine) | Tier 1.5
 Basic Circuit (worth 14 iron, requires Cutting Machine) | Tier 1.5
-Aluminum Rod (worth 24 iron, requires Cutting Machine) | Tier 1.5
+Aluminum Rod (worth 32 iron, requires Cutting Machine) | Tier 1.5
 
 Iron Heat Coil (worth 4 iron, requires a Crusher) | Tier 2
 Copper Heat Coil (worth 8 iron, requires a Crusher) | Tier 2
@@ -54,11 +60,11 @@ Steel Ingot (worth 4 iron, requires a Sifter & Grinder) | Tier 2.5
 Steel Scaffolding (worth 5 iron, requires a Sifter & Grinder) | Tier 2.5
 Steel Mech Component (worth 18 iron, requires a Sifter & Grinder) | Tier 2.5
 Steel Blocks (worth 36 iron, requires a Sifter & Grinder) | Tier 2.5
-Plastic (worth ???, requires a Polymerizer and Refinery) | Tier 2.5
+Plastic (worth ???, requires a Polymerizer and Refinery) | Tier 2.5 |
 Rubber (worth ???, requires a Polymerizer and Refinery) | Tier 2.5
 
-HSS Steel Ingot (worth 9 iron, requires an Arc Furnace) | Tier 3
+HSS Steel Ingot (worth 9 iron, requires an Arc Furnace) | Tier 3 | 1 Titanium
 
-HSS Steel Bolt (worth 27 iron, requires a Precision Assembler) | Tier 3.5
-Advanced Circuit (worth ???, requires a Precision Assembler and Refinery) | Tier 3.5
+HSS Steel Bolt (worth 27 iron, requires a Precision Assembler) | Tier 3.5 | 2 Titanium
+Advanced Circuit (worth ???, requires a Precision Assembler and Refinery) | Tier 3.5 | 1 Titanium
 

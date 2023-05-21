@@ -179,9 +179,9 @@ furnace.addRecipe(<item:minecraft:brick>, <item:minecraft:dirt>);
 // Blast furnace
 recipes.remove(<item:ImmersiveEngineering:stoneDecoration:2>);
 recipes.addShaped(<item:ImmersiveEngineering:stoneDecoration:2>,
- [[<item:minecraft:brick_block>, <item:minecraft:brick>, <item:minecraft:brick_block>],
+ [[<item:minecraft:brick>, <item:minecraft:brick>, <item:minecraft:brick>],
   [<item:minecraft:brick>, <item:minecraft:brick>, <item:minecraft:brick>],
-  [<item:minecraft:brick_block>, <item:minecraft:brick>, <item:minecraft:brick_block>]]);
+  [<item:minecraft:brick>, <item:minecraft:brick>, <item:minecraft:brick>]]);
 
 recipes.remove(<item:ImmersiveEngineering:metal:38>);
 recipes.remove(<item:libVulpes:libVulpesproductrod:6>);
